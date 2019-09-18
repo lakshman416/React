@@ -3,21 +3,21 @@ import './SearchBar.css';
 
 const sortByOptions = {
     'Best Match':'best_match',
-    'Highest Rated':'review',
-    'Most Reviewed':'review_count'
+    'Highest Rated':'rating',
+    'Most Reviewed':'review_count   '
 };
 
 class SearchBar extends React.Component{
     renderSortByOptions(){
-        return Object.keys(sortByOptions).map(sortByOption=>{
+        return Object.keys(sortByOptions).map(sortByOption=> {
             let sortByOptionValue = sortByOptions[sortByOption];
-            return <li>key = {sortByOptionValue}>{sortByOption}</li>
+            return <li key = {sortByOptionValue}>{sortByOption}</li>
         });
     }
     render(){
         return (
             <div className="SearchBar">
-                <div ClassName="SearchBar-sort-options">
+                <div className="SearchBar-sort-options">
                     <ul>
                         {this.renderSortByOptions()}
                     </ul>
