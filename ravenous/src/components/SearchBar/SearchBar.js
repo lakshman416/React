@@ -1,6 +1,5 @@
 import React from 'react';
 import './SearchBar.css';
-import { objectTypeSpreadProperty } from '@babel/types';
 
 const sortByOptions = {
     'Best Match':'best_match',
@@ -10,7 +9,7 @@ const sortByOptions = {
 
 class SearchBar extends React.Component{
     renderSortByOptions(){
-        return object.keys(sortByOptions).map(sortByOption=>{
+        return Object.keys(sortByOptions).map(sortByOption=>{
             let sortByOptionValue = sortByOptions[sortByOption];
             return <li>key = {sortByOptionValue}>{sortByOption}</li>
         });
@@ -28,7 +27,7 @@ class SearchBar extends React.Component{
                     <input placeholder="Where?" />
                 </div>
                 <div className="SearchBar-submit">
-                    <a>Let's Go</a>
+                    <a href=" ">Let's Go</a>
                 </div>
             </div>
         );
