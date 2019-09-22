@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Current Temperature
+        </title>
+        <link href="./index.css" type="text/css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <div>
+            <div id="top">
+                <h2>Weather Report</h2>
+                <img src="Weather-Report-Free-Download-PNG.png">
+            </div>
+            <div id="input"> 
+                <label for="location"><b>Location: </b></label>
+                <input type="text" id="location" placeholder="Enter location">
+                <button onclick="getData()">Temperature</button>
+            </div>
+            <div id="temp">
+                <p id="out1"></p>
+                <p id="out2"></p>
+            </div>
+        </div>
+    </body>
+</html>
