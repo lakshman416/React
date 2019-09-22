@@ -1,0 +1,33 @@
+#image{
+    background-color:#FF2600;
+    width:100%;
+    height:20%;
+}
+img{
+    height: 160px;
+    padding-left:45%;
+    position: center;
+}
+#inandout{
+    width:100%;
+    text-align:center;
+    background-color: #FF745C;
+    padding:20px;
+}
+button{
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: #C157FF;
+    z-index: 1;
+    
+}
+#output{
+    background-color:#FF4929;
+    padding:30px 30px 100% 30px;
+    z-index: 2;
+    text-align:center;
+}
+#out1 #out2 #out3{
+    background-color: #FF6C52;
+}
+

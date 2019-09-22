@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Get API calls
+        </title>
+        <link href="./index.css" type='text/css' rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <div>
+            <div id="image">
+                <img src="git.svg" alt="Git Hub" >
+            </div>
+            <div id="inandout">
+                <h2>This is to get all the information from GitHub</h2>
+                <label>Enter User Name</label>
+                <input type="text" id="username" placeholder="User Name" >
+                <button onclick="getData();">Get Data</button>
+            </div>
+            <div id="output">
+                    <p id="out1"></p>
+                    <p id="out2"></p>
+                    <p id="out3"></p>
+                </div>
+        </div>
+    </body>
+</html>
